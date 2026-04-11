@@ -272,6 +272,17 @@
     padding: 0.2rem 0.6rem;
     border-radius: 1px;
   }
+  .project-links { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
+  .project-link-primary {
+    font-size: 0.78rem; font-weight: 500; letter-spacing: 0.05em;
+    color: var(--accent); text-decoration: none; text-transform: uppercase;
+  }
+  .project-link-primary:hover { text-decoration: underline; }
+  .project-link-secondary {
+    font-size: 0.78rem; color: var(--ink-faint); text-decoration: none;
+    letter-spacing: 0.04em;
+  }
+  .project-link-secondary:hover { color: var(--ink-light); text-decoration: underline; }
   .project-arrow {
     position: absolute;
     top: 2rem; right: 2rem;
@@ -451,27 +462,36 @@
   <p class="section-label">Selected Projects</p>
   <h2 style="margin-bottom:2.5rem">Work that shows the range.</h2>
   <div class="projects-grid">
-    <a class="project-card" href="https://github.com/madisonmacdonald111/cultural-analytics-project-3" target="_blank">
-      <span class="project-arrow">↗</span>
+    <div class="project-card">
       <div class="project-num">01</div>
       <div class="project-title">Multimodal Meme & Speech Analysis</div>
       <div class="project-desc">Analyzed how political and COVID memes assign blame and heroism across visual, textual, and acoustic features 5,552 memes, 1,081 campaign speeches, and debate audio clips.</div>
       <div class="project-tags"><span class="tag">NLP</span><span class="tag">Computer Vision</span><span class="tag">librosa</span><span class="tag">scikit-learn</span></div>
-    </a>
-    <a class="project-card" href="https://github.com/madisonmacdonald111/cultural-analytics-project-1" target="_blank">
-      <span class="project-arrow">↗</span>
+      <div class="project-links">
+        <a class="project-link-primary" href="https://madisonmacdonald111.github.io/cultural-analytics-project-3/" target="_blank">↗ View Site</a>
+        <a class="project-link-secondary" href="https://github.com/madisonmacdonald111/cultural-analytics-project-3" target="_blank">{ } Code</a>
+      </div>
+    </div>
+    <div class="project-card">
       <div class="project-num">02</div>
       <div class="project-title">LLM vs. Human Text Classification</div>
       <div class="project-desc">Classified 788,922 texts as human or LLM-generated using BERTopic and TF-IDF. Macro F1 = 0.862. Found that AI writing operates at a level of abstraction humans don't.</div>
       <div class="project-tags"><span class="tag">BERTopic</span><span class="tag">TF-IDF</span><span class="tag">Classification</span><span class="tag">GitHub Pages</span></div>
-    </a>
-    <a class="project-card" href="https://github.com/madisonmacdonald111/cultural-analytics-project-2" target="_blank">
-      <span class="project-arrow">↗</span>
+      <div class="project-links">
+        <a class="project-link-primary" href="https://madisonmacdonald111.github.io/cultural-analytics-project-1/" target="_blank">↗ View Site</a>
+        <a class="project-link-secondary" href="https://github.com/madisonmacdonald111/cultural-analytics-project-1" target="_blank">{ } Code</a>
+      </div>
+    </div>
+    <div class="project-card">
       <div class="project-num">03</div>
       <div class="project-title">Marvel Universe Network Analysis</div>
       <div class="project-desc">Mapped character co-appearance networks across 6,000+ Marvel comics using Louvain community detection and interactive visualization deployed to GitHub Pages.</div>
       <div class="project-tags"><span class="tag">NetworkX</span><span class="tag">pyvis</span><span class="tag">Plotly</span><span class="tag">Community Detection</span></div>
-    </a>
+      <div class="project-links">
+        <a class="project-link-primary" href="https://madisonmacdonald111.github.io/cultural-analytics-project-2/" target="_blank">↗ View Site</a>
+        <a class="project-link-secondary" href="https://github.com/madisonmacdonald111/cultural-analytics-project-2" target="_blank">{ } Code</a>
+      </div>
+    </div>
     <a class="project-card" href="https://github.com/madisonmacdonald111/genetic-algorithm-variable-selection" target="_blank">
       <span class="project-arrow">↗</span>
       <div class="project-num">04</div>
